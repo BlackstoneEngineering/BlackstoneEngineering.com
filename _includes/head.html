@@ -18,6 +18,19 @@
     <!-- Bing Verification -->
     {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
+    <!-- Google Analytics -->
+    {% if site.google_analytics %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '{{site.google_analytics}}');
+        </script>
+    {% endif %}
+
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" }}">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
