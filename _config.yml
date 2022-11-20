@@ -14,7 +14,7 @@ google_verify:
 bing_verify:
 
 #Google Analytics Tracking Code
-google_analytics: UA-128201076-1
+google_analytics: GTM-KN6KMN9
 
 # Contact form:
 # - static : pass through formspree.io to validate email sending
